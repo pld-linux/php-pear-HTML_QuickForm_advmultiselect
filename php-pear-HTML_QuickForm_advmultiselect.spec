@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		HTML
 %define		_subclass	QuickForm
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}_advmultiselect
 
 Summary:	%{_pearname} - element for HTML_QuickForm that emulate a multi-select
 Summary(pl):	%{_pearname} - element HTML_QuickForm emuluj±cy wielokrotn± listê wyboru
 Name:		php-pear-%{_pearname}
-Version:	0.5.1
+Version:	1.0.0
 Release:	1
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	f9d0e96e12e0da3432676aaaedb430fd
+# Source0-md5:	87dcce2d71569f40ec11cd29ffbc3b91
 URL:		http://pear.php.net/package/HTML_QuickForm_advmultiselect/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
