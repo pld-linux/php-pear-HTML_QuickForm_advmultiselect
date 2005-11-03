@@ -15,7 +15,11 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	87dcce2d71569f40ec11cd29ffbc3b91
 URL:		http://pear.php.net/package/HTML_QuickForm_advmultiselect/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
+Requires:	php-pear-HTML_Common >= 1.2.1
+Requires:	php-pear-HTML_QuickForm > 3.2.4
+Requires:	php-pear-PEAR
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
