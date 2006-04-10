@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - element for HTML_QuickForm that emulate a multi-select
 Summary(pl):	%{_pearname} - element HTML_QuickForm emuluj±cy wielokrotn± listê wyboru
 Name:		php-pear-%{_pearname}
-Version:	1.1.0
-Release:	2
+Version:	1.2.0
+Release:	1
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	723082cd3da5e2547323cd4097efc8cc
+# Source0-md5:	8b685db38acd61363e31e0960e4546f0
 URL:		http://pear.php.net/package/HTML_QuickForm_advmultiselect/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
