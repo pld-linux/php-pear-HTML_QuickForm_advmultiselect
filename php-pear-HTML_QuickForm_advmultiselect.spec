@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_advmultiselect
 
 Summary:	%{_pearname} - element for HTML_QuickForm that emulate a multi-select
-Summary(pl):	%{_pearname} - element HTML_QuickForm emuluj±cy wielokrotn± listê wyboru
+Summary(pl.UTF-8):   %{_pearname} - element HTML_QuickForm emulujÄ…cy wielokrotnÄ… listÄ™ wyboru
 Name:		php-pear-%{_pearname}
 Version:	1.2.0
 Release:	1
@@ -32,9 +32,9 @@ emulating a multi-select.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
+%description -l pl.UTF-8
 Pakiet HTML_QuickForm_advmultiselect rozszerza HTML_QuickForm o dwa
-znajduj±ce siê obok siebie pola wyboru emuluj±ce wielokrotn± listê
+znajdujÄ…ce siÄ™ obok siebie pola wyboru emulujÄ…ce wielokrotnÄ… listÄ™
 wyboru.
 
 Ta klasa ma w PEAR status: %{_status}.
