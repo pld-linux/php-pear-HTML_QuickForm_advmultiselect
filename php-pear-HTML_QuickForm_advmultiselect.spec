@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_advmultiselect
 
 Summary:	%{_pearname} - element for HTML_QuickForm that emulate a multi-select
-Summary(pl.UTF-8):   %{_pearname} - element HTML_QuickForm emulujący wielokrotną listę wyboru
+Summary(pl.UTF-8):	%{_pearname} - element HTML_QuickForm emulujący wielokrotną listę wyboru
 Name:		php-pear-%{_pearname}
 Version:	1.2.0
 Release:	1
