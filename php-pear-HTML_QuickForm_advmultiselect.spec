@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - element for HTML_QuickForm that emulate a multi-select
 Summary(pl.UTF-8):	%{_pearname} - element HTML_QuickForm emulujący wielokrotną listę wyboru
 Name:		php-pear-%{_pearname}
-Version:	1.4.1
+Version:	1.5.0
 Release:	1
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	32e27d3ff3d6a96b1cd5f2ba0a38eb92
+# Source0-md5:	70832b24d66d538ba3a28926746387d0
 URL:		http://pear.php.net/package/HTML_QuickForm_advmultiselect/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -40,6 +40,20 @@ wyboru.
 
 Ta klasa ma w PEAR status: %{_status}.
 
+%package tests
+Summary:	Tests for PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
+Group:		Development/Languages/PHP
+Requires:	%{name} = %{version}-%{release}
+AutoReq:	no
+AutoProv:	no
+
+%description tests
+Tests for PEAR::%{_pearname}.
+
+%description tests -l pl.UTF-8
+Testy dla PEAR::%{_pearname}.
+
 %prep
 %pear_package_setup
 
@@ -53,8 +67,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc install.log
-%doc docs/%{_pearname}/{NEWS,ChangeLog,examples,docs/*}
+%doc install.log docs/%{_pearname}/{ChangeLog,examples}
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
 %{php_pear_dir}/data
+
+%files tests
+%defattr(644,root,root,755)
+%{php_pear_dir}/tests/*
