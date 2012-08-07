@@ -1,13 +1,13 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		HTML
 %define		_subclass	QuickForm
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}_advmultiselect
+%define		_pearname	HTML_QuickForm_advmultiselect
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - element for HTML_QuickForm that emulate a multi-select
 Summary(pl.UTF-8):	%{_pearname} - element HTML_QuickForm emulujący wielokrotną listę wyboru
 Name:		php-pear-%{_pearname}
 Version:	1.5.1
-Release:	3
+Release:	4
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -17,15 +17,15 @@ BuildRequires:	php-pear-PEAR
 BuildRequires:	php-pear-PEAR >= 1:1.5.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(pcre)
 Requires:	php-common >= 3:4.2.0
-Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-HTML_Common >= 1.2.5
 Requires:	php-pear-HTML_QuickForm >= 3.2.10
 Requires:	php-pear-PEAR-core >= 1:1.4.3
 Suggests:	php-pear-PHPUnit
-Conflicts:	php-pear-HTML_QuickForm = 3.2.4
 Obsoletes:	php-pear-HTML_QuickForm_advmultiselect-tests
+Conflicts:	php-pear-HTML_QuickForm = 3.2.4
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -61,5 +61,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log docs/%{_pearname}/{ChangeLog,examples}
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/%{_subclass}/*.php
+%{php_pear_dir}/HTML/QuickForm/*.php
 %{php_pear_dir}/data
