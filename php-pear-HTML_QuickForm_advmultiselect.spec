@@ -2,7 +2,6 @@
 %define		_subclass	QuickForm
 %define		_status		stable
 %define		_pearname	HTML_QuickForm_advmultiselect
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - element for HTML_QuickForm that emulate a multi-select
 Summary(pl.UTF-8):	%{_pearname} - element HTML_QuickForm emulujący wielokrotną listę wyboru
 Name:		php-pear-%{_pearname}
